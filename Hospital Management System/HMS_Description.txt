@@ -1,0 +1,20 @@
+		Hospital Management System
+	    ===================================
+Created By: Gobinda Bhattacharjee
+
+Description: In this project I have created one DDL and one DML file in which I have created all the tables, store procedures and triggers in the DDL file and all the manipulation process was done in the DML file. Here, I worked on the database of a hospital in which there are following tables:
+1) Doctor
+2) Patient
+3) Lab 
+4) InPatient
+5) OutPatient
+6) Billing 
+7) Room 
+Doctor Table: It contains the information about the doctors currently at the hospital and by using a store procedure called 'sp_Doctor' we can simply add, remove or update values into the table.
+
+Patient Table: Similarly as the doctors table it contains all the information of the patients inside the hospital and there data are sent to the 'Lab' table from which the doctor can identify if the patient needs to be sent to the 'InPatient' or 'OutPatien' table. If the condition is very critical then we need to send the patient into the 'InPatient' table and the details will be added to a corresponding room from the 'RoomTable'. 
+
+By using two triggers which are 'after triggers' we can simply update the values of the rooms whenever a patient is inserted in the 'InPatient' table or deleted from the the 'InPatient' table. This project simplyfies the workload for the entire hospital and keeps all things into track.
+
+The final table 'Bill' Table allows to calculate all the bills from all the tables and sum up the total. By this we can manage a hospitals daily tasks easily. 
+
